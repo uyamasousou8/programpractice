@@ -9,6 +9,10 @@ import javax.swing.*;
 
 public class MyFrame extends JFrame 
 {	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	MyFileInput fileinput;
 	byte crlf [] = {13,10};//キャリッジリターン（CR)，改行(LF)のバイトでの並びで送信時の区切り用
 	JPanel p;
@@ -60,12 +64,12 @@ public class MyFrame extends JFrame
 		}
 		public void actionPerformed(ActionEvent e)
 		{
-			label.setText("Start");
+			//label.setText("Start");
 			try
 			{
 				int port = 80;
 				//サーバー側の準備
-				textArea.append("Sever wait...\n");
+				//textArea.append("Sever wait...\n");
 				ServerSocket ssocket = new ServerSocket(port);
 				Socket socket = ssocket.accept();
 				textArea.append("Sever Connect...\n");
@@ -84,7 +88,7 @@ public class MyFrame extends JFrame
 				os.write(crlf);
 				
 				//疑似HTMLコードを渡す
-				String html = fileinput.FileOpen("test.txt");
+				String html = fileinput.FileOpen("c:\\server\\data\\test.txt");
 				//html = "<html><body>\n";
 				//html += "<h1>";
 				//html += "Hello World";

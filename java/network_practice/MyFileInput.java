@@ -13,7 +13,7 @@ public class MyFileInput {
 		{
 			BufferedReader br = new BufferedReader(new FileReader(input));
 			//デバッグ用
-			System.out.println("test");
+			//System.out.println("test");
 			//ファイルが終わるまで出力し続ける。
 			String buf = br.readLine();
 			while(buf!=null)
