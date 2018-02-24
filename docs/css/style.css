@@ -2,6 +2,32 @@
 body{
   background: #b3d7db
 }
+header{
+  display: block;
+  padding: 30px;
+  background: #333;
+  color: white
+}
+h1{
+  font-size: 240%
+}
+#container
+{
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background: white
+}
 .small{
   font-size: 85%;
+}
+footer{
+  display: block;
+  background: #333;
+  color: white;
+  font-size: 85%;
+  line-height: 1em;
+  text-align: center;
+  padding: 10px
 }
